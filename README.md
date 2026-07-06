@@ -23,7 +23,8 @@ Easily extendable for IoT applications
 
 # Hardware Components
 
-<img width="840" height="754" alt="image" src="https://github.com/user-attachments/assets/abf0b470-c3c4-47e7-95b8-b46367cbcdd4" />
+<img width="837" height="415" alt="image" src="https://github.com/user-attachments/assets/12659eff-f322-46ae-a615-45ba71b2ccce" />
+
 
 
 # Software Used
@@ -32,4 +33,8 @@ STM32 Arduino Core
 Arduino IDE 
 Embedded C++
 Servo Library
+
+# System Architecture
+<img width="1024" height="572" alt="image" src="https://github.com/user-attachments/assets/dd756645-f331-4ce8-8cab-7587173ee480" />
+
 
