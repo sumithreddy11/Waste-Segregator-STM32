@@ -35,6 +35,12 @@ Embedded C++
 Servo Library
 
 # System Architecture
+
 <img width="1024" height="572" alt="image" src="https://github.com/user-attachments/assets/dd756645-f331-4ce8-8cab-7587173ee480" />
+
+
+
+
+
 
 
