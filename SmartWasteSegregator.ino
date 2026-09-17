@@ -1,19 +1,19 @@
 #include <Servo.h>
 
 
-// Smart Waste Segregation using STM32 ARM Cortex-M4
 
 
-//  Pin Configuration 
-#define SERVO_PIN PA8      // PWM Pin
-#define SOIL_PIN  PA0      // Analog Input
+
+
+#define SERVO_PIN PA8      
+#define SOIL_PIN  PA0     
 
 Servo servo;
 
-//  Servo Positions 
-const int REST_POS  = 90;      // Neutral Position
-const int LEFT_POS  = 120;     // Wet Bin
-const int RIGHT_POS = 60;      // Dry Bin
+
+const int REST_POS  = 90;      
+const int LEFT_POS  = 120;     
+const int RIGHT_POS = 60;      
 
 // Predefined  Moisture Threshold 
 // Dry  : 100 - 380
@@ -38,14 +38,14 @@ void setup()
 
 void loop()
 {
-    // Read Moisture Sensor
+    
     moistureValue = analogRead(SOIL_PIN);
 
     Serial.print("Current Moisture Value : ");
     Serial.println(moistureValue);
 
 
-    // Wet Waste
+   
 
     if (moistureValue > moistureThreshold)
     {
@@ -62,7 +62,7 @@ void loop()
     }
 
 
-    // Dry Waste
+    
 
     else
     {
