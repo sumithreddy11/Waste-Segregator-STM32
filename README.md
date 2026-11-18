@@ -38,9 +38,18 @@ Servo Library
 
 <img width="1024" height="572" alt="image" src="https://github.com/user-attachments/assets/dd756645-f331-4ce8-8cab-7587173ee480" />
 
+## Quick start
 
+| Signal | STM32 pin |
+| --- | --- |
+| Capacitive moisture sensor analog output | PA0 |
+| Servo control | PA8 |
 
+1. Install the STM32 Arduino Core in Arduino IDE and select your STM32F446RE board.
+2. Connect the sensor and servo using the pin table and component specifications. Connect their signal grounds to the controller ground.
+3. Open and upload `SmartWasteSegregator.ino`. Open Serial Monitor at 9600 baud.
+4. Test known wet and dry samples. Adjust `moistureThreshold` for your sensor and materials.
 
+## Demo and expected behavior
 
-
-
+The serial monitor prints the raw reading and classification. A value above 500 is wet and moves the servo to 120°. A value of 500 or below is dry and moves it to 60°. The servo returns to 90° after one second. The sketch then waits 1.5 seconds before taking the next sample.
